@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Automated Irrigation System</title>
+    <meta
+      http-equiv="Accept-CH"
+      content="Sec-CH-UA-Platform-Version, Sec-CH-UA-Model"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://images.squarespace-cdn.com/content/v1/63e07e16c23aa4100c4c2059/cc93b906-63bd-4ede-aaf6-3dfd4191c49f/favicon.ico"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="style-active.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <button class="open-sidebar" id="toggleSidebar">
+        <img
+          src="./icons/sidebar.png"
+          alt="Menu Icon"
+          class="menu-icon"
+          id="menuIcon"
+        />
+      </button>
+      <img src="./icons/aglantis-logo.png" alt="Aglantis Logo" class="logo" />
+      <div class="user-info">
+        <span class="user-name">Mark Casta</span>
+        <img src="./icons/user-icon.png" alt="User Icon" class="user-icon" />
+      </div>
+    </header>
+    <div class="sidebar" id="sidebar">
+      <a href="index.html">Home</a>
+      <a href="farm-statistics.html">Farm Statistics</a>
+      <a href="farm-control-panel.html">Farm Control Panel</a>
+      <a href="pause-stop-buttons.html">Pause and Stop Buttons Feature</a>
+    </div>
+    <div id="overlay-sidebar" class="overlay-sidebar"></div>
+    <div class="container" id="mainContent">
+      <div id="map"></div>
+      <div id="sequence-container-wrapper">
+        <div id="sequence-container"></div>
+        <div class="buttons">
+          <a class="button" id="start-irrigation-plan" href="index.html">
+            Click to go back
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="databases.js"></script>
+    <script src="script-active-page.js"></script>
+  </body>
+</html>
